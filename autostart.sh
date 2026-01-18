@@ -76,6 +76,11 @@ RED='\033[0;31m'
 NC='\033[0m'
 
 # Отчет кладем в корень папки пользователя для удобства
+#Находим имя реального пользователя
+REAL_USER=${SUDO_USER:-$USER}
+#Находим его настоящую домашнюю директорию
+REAL_HOME=$(getent passwd "$REAL_USER" | cut -d: -f6)
+
 export REPORT_PATH="$REAL_HOME/machine_report.txt"
 export CONF_FILE="/tmp/server.conf"
 
