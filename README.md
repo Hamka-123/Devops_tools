@@ -1,9 +1,9 @@
 
- #        OCTOPUS LINUX NETWORK CONFIGURATOR
+ #        🐙 OCTOPUS LINUX NETWORK CONFIGURATOR
 
 Автор / Author: alinababenko.work@gmail.com
 
-Версия / Version: 2.1 (Stable - TMP Edition 🐙)
+Версия / Version: 2.1 (Dev - TMP Edition)
 
 -----------------------------------------------------
 
