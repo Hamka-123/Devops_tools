@@ -1,62 +1,78 @@
+# 🛠️ DevOps Tools
 
- #        🐙 OCTOPUS LINUX NETWORK CONFIGURATOR
+A personal collection of **DevOps tools, scripts, and utilities** that I find useful enough to keep close at hand.
 
-Автор / Author: alinababenko.work@gmail.com
+The repository contains small utilities as well as more involved automation projects covering Linux, networking, containers, infrastructure, troubleshooting, and system administration.
 
-Версия / Version: 2.1 (Dev - TMP Edition)
+The goal is simple:
 
------------------------------------------------------
+> **Build it once, make it useful, document it, and keep it handy.**
 
-## [RU] ПОЛЬЗОВАТЕЛЬСКАЯ ИНСТРУКЦИЯ
+---
 
-### ОПИСАНИЕ:
-Автоматизированный инструмент для настройки сети (NAT, DHCP, DNS, SSH).
-Работает полностью оффлайн. В версии 2.1 добавлена самоизоляция в /tmp.
+## 🔧 Tools
 
-### КАК ЗАПУСТИТЬ:
-1. Примонтируйте ISO-образ (например, в /mnt/cdrom):
-```bash
-   sudo mkdir -p /mnt/cdrom
-   sudo mount /dev/sr0 /mnt/cdrom
-   ```
+### 🐙 [Octopus — Linux Network Configurator](./octopus/)
 
-2. Запустите установку прямой командой:
-```bash
-   sudo bash /mnt/cdrom/autostart.sh
-   ```
+A utility for automating Linux network configuration in offline environments.
 
-### ЧТО ПРОИСХОДИТ ПОСЛЕ ЗАПУСКА:
-- МИГРАЦИЯ: Скрипт автоматически копирует себя в /tmp/octopus_config.
-- ПРАВА: Все необходимые права доступа (chmod) назначаются автоматически.
-- ЧИСТОТА: После перезагрузки рабочая папка в /tmp будет удалена системой.
-- ОТЧЕТ: Финальный отчет будет сохранен в домашнюю папку пользователя:
-  ~/machine_report.txt
+**Covers:**
 
------------------------------------------------------
+* Network interfaces
+* NAT
+* DHCP
+* DNS
+* SSH
+* `nftables`
+* Offline package installation
+* Bash automation
 
-## [EN] USER MANUAL
+---
 
-### DESCRIPTION:
-Automated tool for network configuration (NAT, DHCP, DNS, SSH).
-Fully offline. Version 2.1 features self-isolation in /tmp.
+### 🚧 More tools coming
 
-### HOW TO RUN:
-1. Mount the ISO image (e.g., to /mnt/cdrom):
-```bash
-   sudo mkdir -p /mnt/cdrom
-   sudo mount /dev/sr0 /mnt/cdrom
-   ```
+This repository is intentionally evolving.
 
-2. Run the installation with a single command:
-```bash
-   sudo bash /mnt/cdrom/autostart.sh
-   ```
+New utilities will be added as I encounter recurring DevOps and infrastructure tasks that are worth automating or keeping in one place.
 
-### WHAT HAPPENS AFTER START:
-- MIGRATION: The script automatically copies itself to /tmp/octopus_config.
-- PERMISSIONS: All necessary access rights (chmod) are assigned automatically.
-- CLEANUP: The working directory in /tmp will be cleared by the OS after reboot.
-- REPORT: The final report will be saved to the user's home directory:
-  ~/machine_report.txt
+---
 
-=====================================================
+## 🗂️ Categories
+
+The collection may include tools for:
+
+* 🐧 **Linux**
+* 🌐 **Networking**
+* 🐳 **Docker**
+* ☸️ **Kubernetes**
+* 🚀 **CI/CD**
+* 📊 **Observability**
+* 🗄️ **Databases**
+* 📨 **Messaging & Kafka**
+* 🔐 **Security**
+* 🧰 **Troubleshooting**
+* ⚙️ **Automation**
+
+---
+
+## 💡 Philosophy
+
+Not everything here is intended to replace a mature production tool.
+
+Some utilities exist because:
+
+* a task is repetitive;
+* a command sequence is easy to forget;
+* troubleshooting requires the same steps repeatedly;
+* a small script is faster than setting up a larger tool;
+* or I simply wanted to understand how something works by building it myself.
+
+Each tool includes its own documentation and usage instructions.
+
+---
+
+## 📌 Disclaimer
+
+These tools are maintained primarily for **personal use, experimentation, and practical DevOps work**.
+
+Always review scripts and configuration changes before running them in production environments.
