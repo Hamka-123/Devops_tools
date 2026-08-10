@@ -1,8 +1,8 @@
 # 🛠️ DevOps Tools
 
-A personal collection of **DevOps tools, scripts, and utilities** that I find useful enough to keep close at hand.
+A personal collection of **DevOps tools, scripts, and practical utilities** built to solve recurring infrastructure and engineering tasks.
 
-The repository contains small utilities as well as more involved automation projects covering Linux, networking, containers, infrastructure, troubleshooting, and system administration.
+The repository brings together small, focused tools covering areas such as Linux, networking, performance profiling, remote infrastructure, and automation.
 
 The goal is simple:
 
@@ -29,29 +29,54 @@ A utility for automating Linux network configuration in offline environments.
 
 ---
 
-### 🚧 More tools coming
+### 🔥 [FlameGraph — Linux Performance Profiling](./flamegraph/)
 
-This repository is intentionally evolving.
+A practical workflow for collecting CPU profiling data with Linux `perf` and visualizing call stacks as interactive Flame Graphs.
 
-New utilities will be added as I encounter recurring DevOps and infrastructure tasks that are worth automating or keeping in one place.
+**Covers:**
+
+* Linux `perf`
+* CPU profiling
+* Call-stack collection
+* Flame Graph generation
+* Performance hotspot analysis
 
 ---
 
-## 🗂️ Categories
+### 🖥️ [WSL Remote Automation](./wsl-remote-automation/)
 
-The collection may include tools for:
+A small utility for automating interaction with WSL running on a remote Windows Server through SSH.
 
-* 🐧 **Linux**
+**Covers:**
+
+* SSH
+* Windows Server
+* PowerShell
+* WSL
+* Bash
+* Cross-platform command execution
+* Windows/Linux line-ending handling
+
+---
+
+## 🗂️ Areas
+
+The collection may grow to include utilities for:
+
+* 🐧 **Linux & System Administration**
 * 🌐 **Networking**
-* 🐳 **Docker**
+* 🐳 **Docker & Containers**
 * ☸️ **Kubernetes**
+* 🏗️ **Infrastructure as Code**
 * 🚀 **CI/CD**
-* 📊 **Observability**
+* 📊 **Observability & Performance**
 * 🗄️ **Databases**
 * 📨 **Messaging & Kafka**
 * 🔐 **Security**
 * 🧰 **Troubleshooting**
 * ⚙️ **Automation**
+
+Not every area needs to have a tool yet. This list reflects the types of problems this toolbox is intended to cover.
 
 ---
 
@@ -65,14 +90,24 @@ Some utilities exist because:
 * a command sequence is easy to forget;
 * troubleshooting requires the same steps repeatedly;
 * a small script is faster than setting up a larger tool;
-* or I simply wanted to understand how something works by building it myself.
+* or building a small utility is a useful way to understand how something works.
 
-Each tool includes its own documentation and usage instructions.
+The focus is on **practical, reusable solutions rather than complexity for its own sake**.
+
+Each tool has its own documentation and usage instructions.
 
 ---
 
-## 📌 Disclaimer
+## 📌 Status
+
+This repository is intentionally evolving.
+
+New tools are added when a recurring DevOps or infrastructure problem is worth automating, documenting, or keeping readily available.
+
+---
+
+## ⚠️ Disclaimer
 
 These tools are maintained primarily for **personal use, experimentation, and practical DevOps work**.
 
-Always review scripts and configuration changes before running them in production environments.
+Review scripts and configuration changes before running them in production environments.
