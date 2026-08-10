@@ -12,7 +12,7 @@ The goal is simple:
 
 ## 🔧 Tools
 
-### 🐙 [Octopus — Linux Network Configurator](./octopus/)
+### 🐙 [Octopus — Linux Network Configurator](./linux-network-configurator/)
 
 A utility for automating Linux network configuration in offline environments.
 
